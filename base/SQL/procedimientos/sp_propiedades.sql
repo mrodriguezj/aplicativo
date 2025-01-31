@@ -44,3 +44,25 @@ DELIMITER ;
 CALL sp_actualizar_propiedad(1, 180.50, 275000.00, 'comercial', 'reservado', 'Cerca de zona comercial.');
 --FIN EJEMPLO
 
+
+--LISTAR PROPIEDADES DISPONIBLES
+DELIMITER $$
+
+CREATE PROCEDURE sp_listar_lotes_disponibles()
+BEGIN
+SELECT
+    id_lote,
+    CONCAT('Lote ', id_lote) AS lote_info,
+    precio
+FROM propiedades
+WHERE disponibilidad = 'disponible'
+ORDER BY id_lote ASC;
+END $$
+
+DELIMITER ;
+
+
+--EJEMPLO DE LISTAR PROPIEDADES DISPONIBLES
+CALL sp_listar_lotes_disponibles();
+--FIN DE EJEMPLO
+

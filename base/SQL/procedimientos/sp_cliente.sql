@@ -44,3 +44,20 @@ DELIMITER ;
 CALL sp_actualizar_cliente(1, 'Carlos', 'Ramírez', 'Hernández', 'carlos.ramirez@example.com', '5566778899');
 --FIN DE EJEMPLO
 
+DELIMITER $$
+
+--LISTAR CLIENTES
+CREATE PROCEDURE sp_listar_clientes()
+BEGIN
+SELECT
+    id_cliente,
+    CONCAT(nombre, ' ', apellido_paterno, ' ', COALESCE(apellido_materno, '')) AS nombre_completo
+FROM cliente
+ORDER BY nombre_completo ASC;
+END $$
+
+DELIMITER ;
+
+--EJEMPLO DE USO
+CALL sp_listar_clientes();
+--FIN DE EJEMPLO
