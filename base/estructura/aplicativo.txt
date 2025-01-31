@@ -1,0 +1,11 @@
+cobranza/                 # Raíz del proyecto
+│── aplicativo/           # Contiene la lógica del sistema
+│   ├── controladores/    # Controladores en PHP (lógica de negocio)
+│── configuración/        # Configuración del sistema (conexión a la BD)
+│── public/               # Archivos accesibles públicamente
+│   ├── css/              # Archivos de estilos CSS
+│   ├── js/               # Archivos JavaScript
+│   ├── bootstrap/        # Librerías Bootstrap
+│   ├── presentacion/     # Sección de interfaz del usuario (front-end)
+│── index.php             # Archivo de entrada principal
+│── .htaccess             # Configuración de acceso y seguridad
