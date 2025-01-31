@@ -1,7 +1,7 @@
 cobranza/                 # Raíz del proyecto
-│── aplicativo/           # Contiene la lógica del sistema
+│── app/           # Contiene la lógica del sistema
 │   ├── controladores/    # Controladores en PHP (lógica de negocio)
-│── configuración/        # Configuración del sistema (conexión a la BD)
+│── config/        # Configuración del sistema (conexión a la BD)
 │── public/               # Archivos accesibles públicamente
 │   ├── css/              # Archivos de estilos CSS
 │   ├── js/               # Archivos JavaScript
