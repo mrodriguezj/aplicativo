@@ -17,7 +17,7 @@ if (file_exists($conexion_path)) {
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../css/estilos.css">
+    <!--<link rel="stylesheet" href="../../css/estilos.css">-->
 </head>
 <body>
 
